@@ -1,23 +1,18 @@
 import React from 'react'
-import Options from "../mcq/Options";
-import Question from "../mcq/Question";
+import Mcq from '../mcq/Mcq'
 
 
-const question = {
+const mcqData = {
     question: 'Who was the first PM of India ?',
+    exams: ['cgl-2016', 'cgl-2020'],
     options: ['Jawar Lal Nehru', 'M K Gandhi', 'Babasaheb Ambedkar', "Subhash Chandra Bose"],
     correct: 1,
     explaination: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime consectetur dolorum autem consequatur.'
-
 }
 
 
 export default function AllQuestion() {
     return (
-        <div className="w-full justify-center bg-slate-600 text-white">
-            <Question question={question.question} />
-            <Options options={question.options} correct={question.correct} />
-
-        </div>
+        <Mcq mcq={mcqData} />
     )
 }
