@@ -23,7 +23,7 @@ export default function Options(props: IProps) {
                 </div>)
             }
             <div className='w-full flex justify-end items-center h-8 px-2 py-2'>
-                <div className={`w-fit bg-slate-200 text-black px-2 rounded cursor-pointer ${selected === -1 && 'hidden'}`} onClick={() => { setShowAns(true) }}>Submit</div>
+                <div className={`w-fit bg-slate-200 text-black px-2 rounded border-[2px] border-zinc-500 cursor-pointer ${selected === -1 && 'hidden'}`} onClick={() => { setShowAns(true) }}>Submit</div>
             </div>
             <div className={`w-full py-1 ${!showAns && 'hidden'}`}>
                 <Disclosure>
